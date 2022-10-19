@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cart</title>
+    <style>
+        *{
+            /* color: white */
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background: beige;
+        }
+        .container{
+            background:	palevioletred;
+            margin: 50px 150px;
+            
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            color: white
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            background: aqua;
+            color: white;
+            align-items: center;
+
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            list-style-type: none;
+            margin: auto 5px
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+          
+            color: black;
+        }
+        .utama{
+            justify-content: space-around;
+            width: 100%;
+            /* background-color: red; */
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+        .list th{
+            /* border:  1px ; */
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+        .main{
+            padding: 20px 0;
+        }
+        .left-section{
+            background: #91a8d0;
+            border-radius: 20px;
+        }
+        .left-section,.t-right{
+            margin: 15px 0;
+        }
+        .total{
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            text-align: end;
+        }
+        .harga{
+            margin-bottom: 20px;
+        }
+        .t-right{
+            background-color: #91a8d0;
+            width: 200px;
+            padding: 0 15px;
+            border-radius: 20px;
+            /* justify-content: space-between; */
+            /* text-align: end; */
+        }
+        .left{
+            text-align: end; 
+        }
+        footer{
+            display: flex;
+            justify-content: space-around;
+            background: aqua;
+            color: white;
+            align-items: center;
+            border-top: 1px solid rgb(13, 64, 71);
+            border-bottom-left-radius:20px ;
+            border-bottom-right-radius:20px ;
+
+            
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="container">     
+        <h1>Cart</h1> 
+    <header>
+        <i class="fa fa-square">Medin's.store</i>
+        <ul>
+          <li><a href="#">hijab</a></li>
+          <li><a href="#">baju</a></li>
+          <li><a href="#">aksesoris</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <i class="fa fa-shopping-cart">(1) </i>
+        </div>
+      </header>
+
+
+
+       
+            <section>
+                <div class="utama" style="display:flex;">
+                    <div class="left-section">
+                        <h3 >Your Cart</h3>
+                        <table >
+                            <tr class="list">
+                                <th >Item</th>
+                                <th >Price</th>
+                                <th >Quantity</th>
+                            </tr>
+                            
+                                <td class="main"><img src="baju.jpg" style="width: 100px;"/><br>
+                                  <span>blouse</span>
+      
+                                <td class="harga">Rp65.000</td>
+                                <td>
+                                    <select>
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                      <option value="">3</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                     <label for="warna"></label>
+                             <select name="warna" >
+                                      <option value="1">Black.</option>
+                                     <option value="2">Lilac.</option>
+                                     <option value="3">Baby pink.</option>
+                                     <option value="4">Baby blue.</option>
+                                     <option value="5">White.</option>
+                                     <option value="6" selected>Grey.</option>
+                             </select>
+                                  </td>
+                         
+
+                            <tr >
+                                <td colspan="3" class="total" >Sub Total Rp65.000</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="t-right"> 
+                     
+                         <tr> 
+                          <td colspan="2" ><b>Summary (1 item)</b></td> 
+                         </tr> 
+                         <tr class="subtotal"> 
+                          <td>Subtotal</td> 
+                          <td class="left" >Rp65.000</td> 
+                         </tr> 
+                         <tr class="subtotal"> 
+                          <td>Shipping</td> 
+                          <td class="left" >-</td> 
+                         </tr> 
+                         <tr class="subtotal"> 
+                          <td>Tax</td> 
+                          <td class="left">-</td> 
+                         </tr> 
+                         <tr class="subtotal"> 
+                          <td colspan="2"> 
+                           <hr style="border-color:black;"></td> 
+                         </tr> 
+                         <tr> 
+                          <td>Total</td> 
+                          <td style="text-align: right;">Rp65.000</td> 
+                         </tr> 
+                         <tr> 
+                          <td colspan="2" style="text-align: right;">             
+                            <button style="width: 100%; background-color: lightpink;">Chekout</button> </a> </td> 
+                         </tr> 
+                        
+                       </table>
+                </div>
+            </section>
+           
+            <footer >
+                <i class="fa fa-square">Armsharing</i>
+                <ul>
+                  <li><a href="#">Album</a></li>
+                  <li><a href="#">Lightstick</a></li>
+                  <li><a href="#">Merch</a></li>
+                </ul>
+                <div class="subscribe">
+                    <h3>Have A Nice Day</h3>
+                  <input type="text" placeholder="Search.." name="search" />
+                  <button type="submit">subscribe</button>
+                
+                </div>
+        </footer>
+        </td>
+    </tr>
+
+</table> 
+</div>
+</body>
+</html>
