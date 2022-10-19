@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>success checkout</title>
+</head>
+<style>
+  *{ font-family: cursive
+  }
+  body{ background:  aqua;
+  }
+  .container{
+            background: palevioletred;
+            margin: 50px 150px;
+            
+            border-radius: 20px;
+   }
+  header{
+            display: flex;
+            justify-content: space-around;
+            background: grey;
+            color: palevioletred;
+            align-items: center;
+            border-radius: 15px;
+     }
+       ul{
+            display: flex;
+     }
+       li{
+            list-style-type: none;
+            margin: auto 10px
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+          
+            color: #b4c8ea;
+        }
+</style>
+<body>
+ <div class="container">
+  <header>
+        <ul>
+
+          <li><a href="#">Home |</a></li>
+          <li><a href="#">Register |</a></li>
+          <li><a href="#">Policy |</a></li>
+          <li><a href="#">About |</a></li>
+            
+          </a></li>
+        </ul>
+        </header>
+        <br>
+      <br>
+        <div style="display: flex; justify-content: left;">
+          <table style="margin: 20px 5px 50px 50px">
+            <tr>
+              <td><img src="sepatu.jpg" width="300" height="300" align="left"></td><br>
+            </tr>
+          </table>
+           <table align="center" style="color: white; margin: 30px 20px auto 100px">
+            <tr>
+                <td><label for="Product"> Product :</label></td>
+                <td>Sepatu Casual</td>
+            </tr>
+            <tr>
+              <td><label for="Description">Description :</label></td>
+              <td> Collor : Black, White, Grey</td>
+            </tr>
+            <tr>
+            <td></td>
+            <td>Size : 36, 37, 38</td>
+            </tr>
+            <tr>
+              <td><label for="Total Amount">Total Amount :</label></td>
+              <td>Rp160.000</td>
+            </tr>
+            <tr>
+              <td><label for="Pay To">Pay To :</label></td>
+              <td>123-3752-1234</td>
+            </tr>
+            <tr>
+              <td><label for="Payment"></label>Payment :</td>
+              <td><select name="Bank" id="Bank">
+                <option value="Mandiri">Mandiri</option>
+              <option value="BCA">BCA</option>
+              <option value="BRI">BRI</option>
+              <option value="BJB" selected>BJB</option>
+              </select></td>
+            </tr>
+            <tr>
+              <td><label for="Account Holder">Account Holder :</td>
+              <td><input type="text" id="Account Holder" value="Bunga"></td>
+            </tr>
+            <tr>
+              <td><label for="Account No"></label>Account No : </td>
+              <td><input type="text" id="Account No" value="3210-1222-013"></td>
+            </tr>
+            <td></td>
+              <td style="color: #1F45FC;"><input type="checkbox" id="checkbox1" checked="">Send it to mobile phone</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: #1F45FC;"><input type="checkbox" id="checkbox2" checked="">Send it to email</td>
+            </tr>
+            <tr>
+              <td><label for="mobile phone">Send it to mobile phone :</label></td>
+              <td><input type="text" id="mobile phone" value="085716932411"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Send it to email :</label></td>
+              <td><input type="email" id="email" value="bunge@gmail.com"></td>
+          <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+              <td></td>
+               <td><button style="background-color: lavender;">Done</button></td>
+          </tr>
+          </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+</head>
+<style>
+	*{ font-family: cambria
+	}
+	body{ background:  aquamarine;
+	}
+	.container{
+            background: yellowgreen;
+            margin: 50px 150px;
+            
+            border-radius: 20px;
+   }
+	header{
+            display: flex;
+            justify-content: space-around;
+            background: grey;
+            color: goldenrod;
+            align-items: center;
+            border-radius: 15px;
+     }
+       ul{
+            display: flex;
+     }
+       li{
+            list-style-type: none;
+            margin: auto 10px
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+          
+            color: #b4c8ea;
+        }
+</style>
+<body>
+ <div class="container">
+	<header>
+        <ul>
+
+          <li><a href="#">Home |</a></li>
+          <li><a href="#">Generate Link |</a></li>
+          <li><a href="#">Transaction History |</a></li>
+          <li><a href="#">Policy |</a></li>
+          <li><a href="#">Log Out |</a></li>
+          	
+          </a></li>
+        </ul>
+             <div class="search">
+          <input type="text" placeholder="Search.." name="search" />
+              </div>
+      </header>
+      <br>
+      <br>
+        <div style="display: flex; justify-content: left;">
+          <table style="margin: 20px 5px 50px 50px">
+            <tr>
+              <td><img src="sepatu.jpg" width="300" height="300" align="left"></td><br>
+            </tr>
+            <tr>
+            <td><form action="" method="POST" enctype="multipart">
+          <input type="file" name="photo">
+          </form></td></tr>
+          <table align="center" style="color: white">
+            <tr>
+                <td><label for="Product"> Product :</label></td>
+                <td><input type="text" id="Product"></td>
+            </tr>
+            <tr>
+                <td><label for="Description"> Description :</label></td>
+                <td><textarea id="Description"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Account Number"> Account Number :</label></td>
+                <td><input type="number" min="0" id="Account Number"></td>
+            </tr>
+            <tr>
+              <td><label for="Bank">Bank : </label></td>
+              <td><select name="Bank" id="Bank">
+                <option value="Mandiri">Mandiri</option>
+              <option value="BCA">BCA</option>
+              <option value="BRI">BRI</option>
+              <option value="BJB">BJB</option>
+              </select></td><br>
+            </tr>
+            <tr>
+              <td><label for="Account Holder">Account Holder :</td>
+              <td><input type="text" id="Account Holder"></td>
+            </tr>
+            <tr>
+              <td><label for="Transaction">Transaction :</label></td>
+              <td><input type="number" min="1" max="10"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><label>*you can buy here</label></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: #1F45FC;"><input type="checkbox" id="checkbox1">Send it to mobile phone</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="color: #1F45FC;"><input type="checkbox" id="checkbox2">Send it to email</td>
+            </tr>
+            <tr>
+              <td><label for="mobile phone">Send it to mobile phone :</label></td>
+              <td><input type="number" id="mobile phone"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Send it to email :</label></td>
+              <td><input type="email" id="email"></td>
+          <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr>
+              <td></td>
+               <td>
+              <a href="Pemesanan barang2.html">
+                <button style="background-color: lavender;">Click Here</button></td>
+          </tr>
+          </table>
+</body>
+</html>
