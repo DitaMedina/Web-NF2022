@@ -1,0 +1,45 @@
+body {
+    background-color: plum;
+    font-family: 'Lucida Sans', Verdana, Geneva, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+}
+
+p {
+    text-align: justify;
+    width: fit-content;
+}
+
+.center {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto {
+    background-color: black;
+}
+
+.foto img {
+    width: 23%;
+}
+
+.cod {
+    margin: auto;
+    width: 80%;
+}
+
+.cod p {
+    background-color: antiquewhite;
+    border: 5px dotted grey;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+    display: block;
+    margin: 0 auto;
+}
+   
