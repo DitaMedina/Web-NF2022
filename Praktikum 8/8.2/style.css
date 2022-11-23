@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+main article {
+    background-color: blanchedalmond;
+    flex: 2;
+}
+
+main aside {
+    background-color: plum;
+    flex: 1;
+}
+main nav {
+    background-color: paleturquoise;
+    flex: 1;
+}
+
+header, footer {
+    background-color: pink;
+    padding: 1rem 0;
+}
+
