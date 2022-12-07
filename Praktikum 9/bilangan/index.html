@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hitung 2 bilangan</title>
+    <body>
+        <h2>Menghitung jumlah dua bilangan</h2>
+        <input type="text" id="bilangan1"  onChange="sum();" /> <br> + <br>
+        <input type="text" id="bilangan2"  onChange="sum();" /> <br> = <br>
+        <input type="text" id="hasil" />
+    
+
+        <script>
+        function sum() {
+            let bilangan1 = document.getElementById('bilangan1').value;
+    
+            let bilangan2 = document.getElementById('bilangan2').value;
+            let hasil = parseInt(bilangan1) + parseInt(bilangan2);
+            if (!isNaN(hasil)) {
+               document.getElementById('hasil').value = hasil;
+            }
+        }
+        </script>
+    </body>
+    
+</html>
