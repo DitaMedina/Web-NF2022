@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="POST">
+            <h1>Form Pemesanan Tiket</h1>
+            <div class="container">
+                <label for="">Nama Pelanggan</label>
+                <input type="text" name="name" id="name">
+                <p id="error_name"></p>
+                <label for="">Email</label>
+                <input type="text" name="email" id="email">
+                <p id="error_email"></p>
+                <label for="">Jam Keberangkatan</label>
+                <input type="text" name="" id="jam">
+                <p id="error_jam"></p>
+                <label for="">Tujuan Keberangkatan</label>
+                <input type="text" name="tujuan" id="tujuan">
+                <p id="error_tujuan"></p>
+                <label for="">Jumlah Tiket</label>
+                <input type="text" name="tiket" id="tiket">
+                <p id="error_tiket"></p>
+                <button type="submit" value="submit" id="submit">Submit</button>   
+            </div>
+        </form>
+    </div>
+    <div class="container_hasil">
+        <h1 id="hasil"></h1>
+        <p id="hasil_nama"></p>
+        <p id="hasil_email"></p>
+        <p id="hasil_jam"></p>
+        <p id="hasil_tujuan"></p>
+        <p id="hasil_tiket"></p>
+    </div>
+
+    <script>
+        let btn_submit = document.getElementById("submit");
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let jam = document.getElementById("jam");
+        let tujuan = document.getElementById('tujuan');
+        let tiket = document.getElementById("tiket");
+        let maxChar = 30;
+        let polaEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+        let polaJam = /^[0-9]+[0-9]+.+[0-9]$/
+        let error = "";
+
+
+        btn_submit.onclick = function() {
+    if (name.value == ""){
+        error = "Nama pelanggan harus di isi !";
+        document.getElementById("error_name").innerHTML = error;
+        return false;
+    } 
+    else if (name.value.length > maxChar){
+        error = "Maksimum 30 karakter !";
+        document.getElementById("error_name").innerHTML = error;
+        return false;
+    } 
+    else if(email == ""){
+        error = "Email harus di isi !!";
+        document.getElementById("error_email").innerHTML = error;
+        return false;
+    } 
+    else if(!polaEmail.test(email.value)){
+        error = "Penulisan email salah !!";
+        document.getElementById("error_email").innerHTML = error;
+        return false; 
+    }
+    else if(jam.value == ""){
+        error = "Jam keberangkatan harus di isi !!";
+        document.getElementById("error_jam").innerHTML = error;
+        return false;
+    }
+    else if(!polaJam.test(jam.value)){
+        error = "Format Jam salah !!";
+        document.getElementById("error_jam").innerHTML = error;
+        return false;
+    }
+    else if(jam.value > 23.00){
+        error = "Jam melebih batas normal !!";
+        document.getElementById("error_jam").innerHTML = error;
+        return false;   
+    }
+    else if(tujuan == ""){
+        error = "Tujuan harus di isi !!";
+        document.getElementById("error_tujuan").innerHTML = error;
+        return false;    
+    }
+    else if(tiket.value == ""){
+        error = "Tiket harus di isi !!";
+        document.getElementById("error_tiket").innerHTML = error;
+        return false;
+    }
+    else if (tiket.value > 10){
+        error = "Tiket melebihi batas normal !!";
+        document.getElementById("error_tiket").innerHTML = error;
+        return false;
+    } 
+    else {
+        document.getElementById("hasil").innerHTML = "Data";
+        document.getElementById("hasil_nama").innerHTML = "Nama : " + name.value;
+        document.getElementById("hasil_email").innerHTML = "Email : " + email.value;
+        document.getElementById("hasil_jam").innerHTML = "Jam Keberangkatan : " + jam.value;
+        document.getElementById("hasil_tujuan").innerHTML = "Tujuan Keberangkatan : " + tujuan.value;
+        document.getElementById("hasil_tiket").innerHTML = "Jumlah Tiket : " + tiket.value;
+        return false;
+    }
+}
+    </script>
+
+</body>
+</html>
